@@ -27,9 +27,11 @@ const App = () => {
   return (
     <div className="app">
       <div className="chat-list-container">
+         <h5>Filter by Chat Title or Order ID</h5>
         <input 
+          className='main-input'
           type="text" 
-          placeholder="Filter by Chat Title or Order ID" 
+          placeholder="Start typing to search" 
           value={filter}
           onChange={(e) => setFilter(e.target.value)}
         />
